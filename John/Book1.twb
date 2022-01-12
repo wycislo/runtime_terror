@@ -1,0 +1,1834 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1018.0949                               -->
+<workbook original-version='18.1' source-build='2021.3.3 (20213.21.1018.0949)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <ParameterAction />
+    <_.fcp.ParameterActionClearSelection.true...ParameterActionClearSelection />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='gridline'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Player Selected' datatype='string' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;Robert Griffin III&quot;'>
+        <calculation class='tableau' formula='&quot;Robert Griffin III&quot;' />
+      </column>
+      <column caption='position' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;DT, RB&quot;'>
+        <calculation class='tableau' formula='&quot;DT, RB&quot;' />
+        <members>
+          <member value='&quot;DT, RB&quot;' />
+          <member value='&quot;RB&quot;' />
+          <member value='&quot;--&quot;' />
+          <member value='&quot;TE&quot;' />
+          <member value='&quot;WR&quot;' />
+          <member value='&quot;QB&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='qb_stats_and_projections' inline='true' name='federated.0vz16961ac7dfx1g8o3z1190gsmc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='qb_stats_and_projections' name='textscan.0wn2ly60pdflq318w5gu70wn3hye'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/86bur/dataclass/Runtime-Terror/Henry/qb_stats_and_projections.csv' dataRefreshTime='' directory='C:/Users/86bur/dataclass/Runtime-Terror/Henry' filename='C:/Users/86bur/AppData/Local/Temp/TableauTemp/03qbhfc1oeqr1j1g66zk01hvjkib/qb_stats_and_projections.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0wn2ly60pdflq318w5gu70wn3hye' name='qb_stats_and_projections.csv' table='[qb_stats_and_projections#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:W126:no:A1:W126:2' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='PLAYER NAME PLAYER NAME' ordinal='1' />
+            <column datatype='string' name='TEAM NAME TEAM NAME' ordinal='2' />
+            <column datatype='string' name='PLAYER POSITION PLAYER POSITION' ordinal='3' />
+            <column datatype='integer' name='2019 COMPLETED PASS 2019 COMPLETED PASS' ordinal='4' />
+            <column datatype='integer' name='2019 ATTEMPTED PASS 2019 ATTEMPTED PASS' ordinal='5' />
+            <column datatype='integer' name='2019 PASSING YDS 2019 PASSING YDS' ordinal='6' />
+            <column datatype='integer' name='2019 PASSING TD 2019 PASSING TD' ordinal='7' />
+            <column datatype='integer' name='2019 INT 2019 INT' ordinal='8' />
+            <column datatype='integer' name='2019 CAR 2019 CAR' ordinal='9' />
+            <column datatype='integer' name='2019 RUSH YDS 2019 RUSH YDS' ordinal='10' />
+            <column datatype='integer' name='2019 RUSH TD 2019 RUSH TD' ordinal='11' />
+            <column datatype='real' name='2019 FPTS 2019 FPTS' ordinal='12' />
+            <column datatype='integer' name='2020 COMPLETED PASS 2020 COMPLETED PASS' ordinal='13' />
+            <column datatype='integer' name='2020 ATTEMPTED PASS 2020 ATTEMPTED PASS' ordinal='14' />
+            <column datatype='integer' name='2020 PASSING YDS 2020 PASSING YDS' ordinal='15' />
+            <column datatype='integer' name='2020 PASSING TD 2020 PASSING TD' ordinal='16' />
+            <column datatype='integer' name='2020 INT 2020 INT' ordinal='17' />
+            <column datatype='integer' name='2020 CAR 2020 CAR' ordinal='18' />
+            <column datatype='integer' name='2020 RUSH YDS 2020 RUSH YDS' ordinal='19' />
+            <column datatype='integer' name='2020 RUSH TD 2020 RUSH TD' ordinal='20' />
+            <column datatype='real' name='2020 FPTS 2020 FPTS' ordinal='21' />
+            <column datatype='string' name='2020 OUTLOOK 2020 OUTLOOK' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0wn2ly60pdflq318w5gu70wn3hye' name='qb_stats_and_projections.csv' table='[qb_stats_and_projections#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:W126:no:A1:W126:2' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='PLAYER NAME PLAYER NAME' ordinal='1' />
+            <column datatype='string' name='TEAM NAME TEAM NAME' ordinal='2' />
+            <column datatype='string' name='PLAYER POSITION PLAYER POSITION' ordinal='3' />
+            <column datatype='integer' name='2019 COMPLETED PASS 2019 COMPLETED PASS' ordinal='4' />
+            <column datatype='integer' name='2019 ATTEMPTED PASS 2019 ATTEMPTED PASS' ordinal='5' />
+            <column datatype='integer' name='2019 PASSING YDS 2019 PASSING YDS' ordinal='6' />
+            <column datatype='integer' name='2019 PASSING TD 2019 PASSING TD' ordinal='7' />
+            <column datatype='integer' name='2019 INT 2019 INT' ordinal='8' />
+            <column datatype='integer' name='2019 CAR 2019 CAR' ordinal='9' />
+            <column datatype='integer' name='2019 RUSH YDS 2019 RUSH YDS' ordinal='10' />
+            <column datatype='integer' name='2019 RUSH TD 2019 RUSH TD' ordinal='11' />
+            <column datatype='real' name='2019 FPTS 2019 FPTS' ordinal='12' />
+            <column datatype='integer' name='2020 COMPLETED PASS 2020 COMPLETED PASS' ordinal='13' />
+            <column datatype='integer' name='2020 ATTEMPTED PASS 2020 ATTEMPTED PASS' ordinal='14' />
+            <column datatype='integer' name='2020 PASSING YDS 2020 PASSING YDS' ordinal='15' />
+            <column datatype='integer' name='2020 PASSING TD 2020 PASSING TD' ordinal='16' />
+            <column datatype='integer' name='2020 INT 2020 INT' ordinal='17' />
+            <column datatype='integer' name='2020 CAR 2020 CAR' ordinal='18' />
+            <column datatype='integer' name='2020 RUSH YDS 2020 RUSH YDS' ordinal='19' />
+            <column datatype='integer' name='2020 RUSH TD 2020 RUSH TD' ordinal='20' />
+            <column datatype='real' name='2020 FPTS 2020 FPTS' ordinal='21' />
+            <column datatype='string' name='2020 OUTLOOK 2020 OUTLOOK' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:W125:no:A1:W125:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>1408</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PLAYER NAME</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PLAYER NAME]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>PLAYER NAME</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TEAM NAME</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TEAM NAME]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>TEAM NAME</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PLAYER POSITION</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PLAYER POSITION]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>PLAYER POSITION</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2019 COMPLETED PASS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2019 COMPLETED PASS]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2019 COMPLETED PASS</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2019 ATTEMPTED PASS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2019 ATTEMPTED PASS]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2019 ATTEMPTED PASS</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2019 PASSING YDS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2019 PASSING YDS]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2019 PASSING YDS</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2019 PASSING TD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2019 PASSING TD]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2019 PASSING TD</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2019 INT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2019 INT]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2019 INT</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2019 CAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2019 CAR]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2019 CAR</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2019 RUSH YDS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2019 RUSH YDS]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2019 RUSH YDS</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2019 RUSH TD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2019 RUSH TD]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2019 RUSH TD</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2019 FPTS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2019 FPTS]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2019 FPTS</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 COMPLETED PASS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2020 COMPLETED PASS]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2020 COMPLETED PASS</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 ATTEMPTED PASS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2020 ATTEMPTED PASS]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2020 ATTEMPTED PASS</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 PASSING YDS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2020 PASSING YDS]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2020 PASSING YDS</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 PASSING TD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2020 PASSING TD]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2020 PASSING TD</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 INT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2020 INT]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2020 INT</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 CAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2020 CAR]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2020 CAR</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 RUSH YDS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2020 RUSH YDS]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2020 RUSH YDS</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 RUSH TD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2020 RUSH TD]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2020 RUSH TD</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 FPTS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2020 FPTS]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2020 FPTS</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 OUTLOOK</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[2020 OUTLOOK]</local-name>
+            <parent-name>[qb_stats_and_projections.csv]</parent-name>
+            <remote-alias>2020 OUTLOOK</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='2019 Attempted Pass' datatype='integer' name='[2019 ATTEMPTED PASS]' role='measure' type='quantitative' />
+      <column caption='2019 Car' datatype='integer' name='[2019 CAR]' role='measure' type='quantitative' />
+      <column caption='2019 Completed Pass' datatype='integer' name='[2019 COMPLETED PASS]' role='measure' type='quantitative' />
+      <column caption='2019 Fpts' datatype='real' name='[2019 FPTS]' role='measure' type='quantitative' />
+      <column caption='2019 Int' datatype='integer' name='[2019 INT]' role='measure' type='quantitative' />
+      <column caption='2019 Passing Td' datatype='integer' name='[2019 PASSING TD]' role='measure' type='quantitative' />
+      <column caption='2019 Passing Yds' datatype='integer' name='[2019 PASSING YDS]' role='measure' type='quantitative' />
+      <column caption='2019 Rush Td' datatype='integer' name='[2019 RUSH TD]' role='measure' type='quantitative' />
+      <column caption='2019 Rush Yds' datatype='integer' name='[2019 RUSH YDS]' role='measure' type='quantitative' />
+      <column caption='2020 Attempted Pass' datatype='integer' name='[2020 ATTEMPTED PASS]' role='measure' type='quantitative' />
+      <column caption='2020 Car' datatype='integer' name='[2020 CAR]' role='measure' type='quantitative' />
+      <column caption='2020 Completed Pass' datatype='integer' name='[2020 COMPLETED PASS]' role='measure' type='quantitative' />
+      <column caption='2020 Fpts' datatype='real' name='[2020 FPTS]' role='measure' type='quantitative' />
+      <column caption='2020 Int' datatype='integer' name='[2020 INT]' role='measure' type='quantitative' />
+      <column caption='2020 Outlook' datatype='string' name='[2020 OUTLOOK]' role='dimension' type='nominal' />
+      <column caption='2020 Passing Td' datatype='integer' name='[2020 PASSING TD]' role='measure' type='quantitative' />
+      <column caption='2020 Passing Yds' datatype='integer' name='[2020 PASSING YDS]' role='measure' type='quantitative' />
+      <column caption='2020 Rush Td' datatype='integer' name='[2020 RUSH TD]' role='measure' type='quantitative' />
+      <column caption='2020 Rush Yds' datatype='integer' name='[2020 RUSH YDS]' role='measure' type='quantitative' />
+      <column caption='Player Highlighted' datatype='boolean' name='[Calculation_399975999272595456]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[PLAYER NAME] = [Parameters].[Parameter 1]' />
+      </column>
+      <column caption='Avg pps' datatype='real' name='[Calculation_399975999278190597]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([2019 FPTS] + [2020 FPTS])/2' />
+      </column>
+      <column caption='Player Name' datatype='string' name='[PLAYER NAME]' role='dimension' type='nominal' />
+      <column caption='Player Position' datatype='string' name='[PLAYER POSITION]' role='dimension' type='nominal' />
+      <column caption='Team Name' datatype='string' name='[TEAM NAME]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='qb_stats_and_projections.csv' datatype='table' name='[__tableau_internal_object_id__].[qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_399975999272595456]' derivation='None' name='[none:Calculation_399975999272595456:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.923304' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.0766962' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_399975999272595456:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Player Selected' datatype='string' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;Robert Griffin III&quot;'>
+          <calculation class='tableau' formula='&quot;Robert Griffin III&quot;' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='qb_stats_and_projections.csv' id='qb_stats_and_projections.csv_B99F14E584E249FE99D213FB3363E4C9'>
+            <properties context=''>
+              <relation connection='textscan.0wn2ly60pdflq318w5gu70wn3hye' name='qb_stats_and_projections.csv' table='[qb_stats_and_projections#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:W126:no:A1:W126:2' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='PLAYER NAME PLAYER NAME' ordinal='1' />
+                  <column datatype='string' name='TEAM NAME TEAM NAME' ordinal='2' />
+                  <column datatype='string' name='PLAYER POSITION PLAYER POSITION' ordinal='3' />
+                  <column datatype='integer' name='2019 COMPLETED PASS 2019 COMPLETED PASS' ordinal='4' />
+                  <column datatype='integer' name='2019 ATTEMPTED PASS 2019 ATTEMPTED PASS' ordinal='5' />
+                  <column datatype='integer' name='2019 PASSING YDS 2019 PASSING YDS' ordinal='6' />
+                  <column datatype='integer' name='2019 PASSING TD 2019 PASSING TD' ordinal='7' />
+                  <column datatype='integer' name='2019 INT 2019 INT' ordinal='8' />
+                  <column datatype='integer' name='2019 CAR 2019 CAR' ordinal='9' />
+                  <column datatype='integer' name='2019 RUSH YDS 2019 RUSH YDS' ordinal='10' />
+                  <column datatype='integer' name='2019 RUSH TD 2019 RUSH TD' ordinal='11' />
+                  <column datatype='real' name='2019 FPTS 2019 FPTS' ordinal='12' />
+                  <column datatype='integer' name='2020 COMPLETED PASS 2020 COMPLETED PASS' ordinal='13' />
+                  <column datatype='integer' name='2020 ATTEMPTED PASS 2020 ATTEMPTED PASS' ordinal='14' />
+                  <column datatype='integer' name='2020 PASSING YDS 2020 PASSING YDS' ordinal='15' />
+                  <column datatype='integer' name='2020 PASSING TD 2020 PASSING TD' ordinal='16' />
+                  <column datatype='integer' name='2020 INT 2020 INT' ordinal='17' />
+                  <column datatype='integer' name='2020 CAR 2020 CAR' ordinal='18' />
+                  <column datatype='integer' name='2020 RUSH YDS 2020 RUSH YDS' ordinal='19' />
+                  <column datatype='integer' name='2020 RUSH TD 2020 RUSH TD' ordinal='20' />
+                  <column datatype='real' name='2020 FPTS 2020 FPTS' ordinal='21' />
+                  <column datatype='string' name='2020 OUTLOOK 2020 OUTLOOK' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0vz16961ac7dfx1g8o3z1190gsmc'>
+      <datasources>
+        <datasource caption='qb_stats_and_projections' name='federated.0vz16961ac7dfx1g8o3z1190gsmc' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0vz16961ac7dfx1g8o3z1190gsmc'>
+        <column caption='Team Name' datatype='string' name='[TEAM NAME]' role='dimension' type='nominal' />
+        <column-instance column='[TEAM NAME]' derivation='None' name='[none:TEAM NAME:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:TEAM NAME:nk]'>
+        <groupfilter function='level-members' level='[none:TEAM NAME:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:TEAM NAME:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <edit-parameter-action caption='Parameter1' name='[Action1_E6CA8D07948F4734B1DB4CC790B251C2]'>
+      <activation type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <agg-type type='attr' />
+      <_.fcp.ParameterActionClearSelection.true...clear-option type='do-nothing' value='s:LROOT:' />
+      <params>
+        <param name='source-field' value='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER NAME:nk]' />
+        <param name='target-parameter' value='[Parameters].[Parameter 1]' />
+      </params>
+    </edit-parameter-action>
+  </actions>
+  <worksheets>
+    <worksheet name='2019qb'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>2019 QB Stats</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='qb_stats_and_projections' name='federated.0vz16961ac7dfx1g8o3z1190gsmc' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Player Selected' datatype='string' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;Robert Griffin III&quot;'>
+              <calculation class='tableau' formula='&quot;Robert Griffin III&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0vz16961ac7dfx1g8o3z1190gsmc'>
+            <column caption='2019 Attempted Pass' datatype='integer' name='[2019 ATTEMPTED PASS]' role='measure' type='quantitative' />
+            <column caption='2019 Car' datatype='integer' name='[2019 CAR]' role='measure' type='quantitative' />
+            <column caption='2019 Completed Pass' datatype='integer' name='[2019 COMPLETED PASS]' role='measure' type='quantitative' />
+            <column caption='2019 Fpts' datatype='real' name='[2019 FPTS]' role='measure' type='quantitative' />
+            <column caption='2019 Int' datatype='integer' name='[2019 INT]' role='measure' type='quantitative' />
+            <column caption='2019 Passing Td' datatype='integer' name='[2019 PASSING TD]' role='measure' type='quantitative' />
+            <column caption='2019 Passing Yds' datatype='integer' name='[2019 PASSING YDS]' role='measure' type='quantitative' />
+            <column caption='2019 Rush Td' datatype='integer' name='[2019 RUSH TD]' role='measure' type='quantitative' />
+            <column caption='2019 Rush Yds' datatype='integer' name='[2019 RUSH YDS]' role='measure' type='quantitative' />
+            <column caption='Player Highlighted' datatype='boolean' name='[Calculation_399975999272595456]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[PLAYER NAME] = [Parameters].[Parameter 1]' />
+            </column>
+            <column caption='INDEX()' datatype='integer' name='[Calculation_399975999273500674]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Player Name' datatype='string' name='[PLAYER NAME]' role='dimension' type='nominal' />
+            <column caption='Team Name' datatype='string' name='[TEAM NAME]' role='dimension' type='nominal' />
+            <column-instance column='[2019 ATTEMPTED PASS]' derivation='None' name='[none:2019 ATTEMPTED PASS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2019 CAR]' derivation='None' name='[none:2019 CAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2019 COMPLETED PASS]' derivation='None' name='[none:2019 COMPLETED PASS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2019 INT]' derivation='None' name='[none:2019 INT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2019 PASSING TD]' derivation='None' name='[none:2019 PASSING TD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2019 PASSING YDS]' derivation='None' name='[none:2019 PASSING YDS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2019 RUSH TD]' derivation='None' name='[none:2019 RUSH TD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2019 RUSH YDS]' derivation='None' name='[none:2019 RUSH YDS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_399975999272595456]' derivation='None' name='[none:Calculation_399975999272595456:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PLAYER NAME]' derivation='None' name='[none:PLAYER NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TEAM NAME]' derivation='None' name='[none:TEAM NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[2019 FPTS]' derivation='Sum' name='[sum:2019 FPTS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_399975999273500674]' derivation='User' name='[usr:Calculation_399975999273500674:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Field'>
+                <order field='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[PLAYER NAME]' />
+                <order field='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[Calculation_399975999272595456]' />
+              </table-calc>
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 ATTEMPTED PASS:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>626</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 CAR:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>176</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 COMPLETED PASS:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>408</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 INT:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>30</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 PASSING TD:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>36</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 PASSING YDS:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>5109</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 RUSH TD:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>9</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 RUSH YDS:qk]' included-values='in-range'>
+            <min>-9</min>
+            <max>1206</max>
+          </filter>
+          <manual-sort column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:Calculation_399975999272595456:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>true</bucket>
+              <bucket>false</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2019 FPTS:qk]' included-values='in-range'>
+            <min>-1.6400000000000001</min>
+            <max>415.68000000000001</max>
+          </filter>
+          <slices>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 ATTEMPTED PASS:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 CAR:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 COMPLETED PASS:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 INT:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 PASSING TD:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 PASSING YDS:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 RUSH TD:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 RUSH YDS:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2019 FPTS:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:TEAM NAME:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[usr:Calculation_399975999273500674:qk:3]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2019 FPTS:qk]' scope='cols' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:Calculation_399975999272595456:nk]' />
+              <lod column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER NAME:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER NAME:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>2020 Fpts:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2019 FPTS:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[usr:Calculation_399975999273500674:qk:3]</rows>
+        <cols>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2019 FPTS:qk]</cols>
+      </table>
+      <simple-id uuid='{68F8ED49-03A7-443E-9DAB-3D886C317ACD}' />
+    </worksheet>
+    <worksheet name='2020qb'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>2020 QB Stats</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='qb_stats_and_projections' name='federated.0vz16961ac7dfx1g8o3z1190gsmc' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Player Selected' datatype='string' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;Robert Griffin III&quot;'>
+              <calculation class='tableau' formula='&quot;Robert Griffin III&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0vz16961ac7dfx1g8o3z1190gsmc'>
+            <column caption='2020 Attempted Pass' datatype='integer' name='[2020 ATTEMPTED PASS]' role='measure' type='quantitative' />
+            <column caption='2020 Car' datatype='integer' name='[2020 CAR]' role='measure' type='quantitative' />
+            <column caption='2020 Completed Pass' datatype='integer' name='[2020 COMPLETED PASS]' role='measure' type='quantitative' />
+            <column caption='2020 Fpts' datatype='real' name='[2020 FPTS]' role='measure' type='quantitative' />
+            <column caption='2020 Int' datatype='integer' name='[2020 INT]' role='measure' type='quantitative' />
+            <column caption='2020 Passing Td' datatype='integer' name='[2020 PASSING TD]' role='measure' type='quantitative' />
+            <column caption='2020 Passing Yds' datatype='integer' name='[2020 PASSING YDS]' role='measure' type='quantitative' />
+            <column caption='2020 Rush Td' datatype='integer' name='[2020 RUSH TD]' role='measure' type='quantitative' />
+            <column caption='2020 Rush Yds' datatype='integer' name='[2020 RUSH YDS]' role='measure' type='quantitative' />
+            <column caption='Player Highlighted' datatype='boolean' name='[Calculation_399975999272595456]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[PLAYER NAME] = [Parameters].[Parameter 1]' />
+            </column>
+            <column caption='INDEX()' datatype='integer' name='[Calculation_399975999273500674]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Player Name' datatype='string' name='[PLAYER NAME]' role='dimension' type='nominal' />
+            <column caption='Team Name' datatype='string' name='[TEAM NAME]' role='dimension' type='nominal' />
+            <column-instance column='[2020 ATTEMPTED PASS]' derivation='None' name='[none:2020 ATTEMPTED PASS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2020 CAR]' derivation='None' name='[none:2020 CAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2020 COMPLETED PASS]' derivation='None' name='[none:2020 COMPLETED PASS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2020 INT]' derivation='None' name='[none:2020 INT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2020 PASSING TD]' derivation='None' name='[none:2020 PASSING TD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2020 PASSING YDS]' derivation='None' name='[none:2020 PASSING YDS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2020 RUSH TD]' derivation='None' name='[none:2020 RUSH TD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2020 RUSH YDS]' derivation='None' name='[none:2020 RUSH YDS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_399975999272595456]' derivation='None' name='[none:Calculation_399975999272595456:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PLAYER NAME]' derivation='None' name='[none:PLAYER NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TEAM NAME]' derivation='None' name='[none:TEAM NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[2020 FPTS]' derivation='Sum' name='[sum:2020 FPTS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_399975999273500674]' derivation='User' name='[usr:Calculation_399975999273500674:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Field'>
+                <order field='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[PLAYER NAME]' />
+                <order field='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[Calculation_399975999272595456]' />
+              </table-calc>
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 ATTEMPTED PASS:qk]' included-values='in-range'>
+            <min>7</min>
+            <max>600</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 CAR:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>156</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 COMPLETED PASS:qk]' included-values='in-range'>
+            <min>4</min>
+            <max>390</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 INT:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>15</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 PASSING TD:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>32</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 PASSING YDS:qk]' included-values='in-range'>
+            <min>44</min>
+            <max>4533</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 RUSH TD:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>6</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 RUSH YDS:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>902</max>
+          </filter>
+          <manual-sort column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:Calculation_399975999272595456:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>true</bucket>
+              <bucket>false</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2020 FPTS:qk]' included-values='in-range-or-null'>
+            <min>2.3300000000000001</min>
+            <max>338.23000000000002</max>
+          </filter>
+          <slices>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 ATTEMPTED PASS:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 CAR:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 COMPLETED PASS:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 INT:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 PASSING TD:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 PASSING YDS:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 RUSH TD:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 RUSH YDS:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2020 FPTS:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:TEAM NAME:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2020 FPTS:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[usr:Calculation_399975999273500674:qk:3]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' data-class='subtotal' value='Tableau Semibold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:Calculation_399975999272595456:nk]' />
+              <lod column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER NAME:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER NAME:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>2020 Fpts:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2020 FPTS:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[usr:Calculation_399975999273500674:qk:3]</rows>
+        <cols>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2020 FPTS:qk]</cols>
+      </table>
+      <simple-id uuid='{C72E4073-D7B0-4F85-99FB-CFA7288FAC43}' />
+    </worksheet>
+    <worksheet name='avgpps'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Points per Season</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='qb_stats_and_projections' name='federated.0vz16961ac7dfx1g8o3z1190gsmc' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Player Selected' datatype='string' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;Robert Griffin III&quot;'>
+              <calculation class='tableau' formula='&quot;Robert Griffin III&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0vz16961ac7dfx1g8o3z1190gsmc'>
+            <column caption='2019 Fpts' datatype='real' name='[2019 FPTS]' role='measure' type='quantitative' />
+            <column caption='2020 Fpts' datatype='real' name='[2020 FPTS]' role='measure' type='quantitative' />
+            <column caption='Player Highlighted' datatype='boolean' name='[Calculation_399975999272595456]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[PLAYER NAME] = [Parameters].[Parameter 1]' />
+            </column>
+            <column caption='INDEX()' datatype='integer' name='[Calculation_399975999273500674]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Avg pps' datatype='real' name='[Calculation_399975999278190597]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([2019 FPTS] + [2020 FPTS])/2' />
+            </column>
+            <column caption='Player Name' datatype='string' name='[PLAYER NAME]' role='dimension' type='nominal' />
+            <column caption='Team Name' datatype='string' name='[TEAM NAME]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_399975999272595456]' derivation='None' name='[none:Calculation_399975999272595456:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PLAYER NAME]' derivation='None' name='[none:PLAYER NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TEAM NAME]' derivation='None' name='[none:TEAM NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_399975999278190597]' derivation='Sum' name='[sum:Calculation_399975999278190597:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_399975999273500674]' derivation='User' name='[usr:Calculation_399975999273500674:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Field'>
+                <order field='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[PLAYER NAME]' />
+                <order field='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[Calculation_399975999272595456]' />
+              </table-calc>
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:Calculation_399975999272595456:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>true</bucket>
+              <bucket>false</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:Calculation_399975999278190597:qk]' included-values='in-range'>
+            <min>-0.39000000000000001</min>
+            <max>376.95500000000004</max>
+          </filter>
+          <slices>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:Calculation_399975999278190597:qk]</column>
+            <column>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:TEAM NAME:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[usr:Calculation_399975999273500674:qk:3]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:Calculation_399975999278190597:qk]' scope='cols' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:Calculation_399975999272595456:nk]' />
+              <lod column='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER NAME:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER NAME:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>2020 Fpts:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:Calculation_399975999278190597:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[usr:Calculation_399975999273500674:qk:3]</rows>
+        <cols>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:Calculation_399975999278190597:qk]</cols>
+      </table>
+      <simple-id uuid='{14A70A89-2F27-4CB5-A9B4-A49BD37737BA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='qb_stats_and_projections' name='federated.0vz16961ac7dfx1g8o3z1190gsmc' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0vz16961ac7dfx1g8o3z1190gsmc'>
+        <column caption='2019 Fpts' datatype='real' name='[2019 FPTS]' role='measure' type='quantitative' />
+        <column caption='2020 Fpts' datatype='real' name='[2020 FPTS]' role='measure' type='quantitative' />
+        <column caption='Avg pps' datatype='real' name='[Calculation_399975999278190597]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='([2019 FPTS] + [2020 FPTS])/2' />
+        </column>
+        <column caption='Team Name' datatype='string' name='[TEAM NAME]' role='dimension' type='nominal' />
+        <column-instance column='[TEAM NAME]' derivation='None' name='[none:TEAM NAME:nk]' pivot='key' type='nominal' />
+        <column-instance column='[2019 FPTS]' derivation='Sum' name='[sum:2019 FPTS:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[2020 FPTS]' derivation='Sum' name='[sum:2020 FPTS:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Calculation_399975999278190597]' derivation='Sum' name='[sum:Calculation_399975999278190597:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='vert' type-v2='layout-flow' w='74200' x='25000' y='1000'>
+            <zone h='6250' id='7' type-v2='title' w='74200' x='25000' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='30583' id='16' param='vert' type-v2='layout-flow' w='74200' x='25000' y='7250'>
+              <zone h='30583' id='19' name='2020qb' w='74200' x='25000' y='7250'>
+                <layout-cache minheight='180' type-h='scalable' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='30583' id='21' name='2019qb' w='74200' x='25000' y='37833'>
+              <layout-cache minheight='180' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='30583' id='15' param='horz' type-v2='layout-flow' w='74200' x='25000' y='68416'>
+              <zone h='30583' id='17' param='vert' type-v2='layout-flow' w='74200' x='25000' y='68416'>
+                <zone h='30583' id='22' name='avgpps' w='74200' x='25000' y='68416'>
+                  <layout-cache minheight='180' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='98000' id='14' param='vert' type-v2='layout-flow' w='24200' x='800' y='1000'>
+            <zone h='9125' id='24' name='avgpps' param='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:Calculation_399975999278190597:qk]' type-v2='filter' values='database' w='24200' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='9125' id='23' name='2020qb' param='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2020 FPTS:qk]' type-v2='filter' values='database' w='24200' x='800' y='10125'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='9125' id='25' name='2019qb' param='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2019 FPTS:qk]' type-v2='filter' values='database' w='24200' x='800' y='19250'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='7625' id='26' mode='checkdropdown' name='2020qb' param='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:TEAM NAME:nk]' type-v2='filter' values='database' w='24200' x='800' y='28375'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='background-color' value='#f2f2f2' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='30' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='29' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='6250' id='7' type-v2='title' w='74200' x='25000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='23' name='2020qb' param='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2020 FPTS:qk]' type-v2='filter' values='database' w='24200' x='800' y='10125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7625' id='26' mode='checkdropdown' name='2020qb' param='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:TEAM NAME:nk]' type-v2='filter' values='database' w='24200' x='800' y='28375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='237' h='30583' id='19' is-fixed='true' name='2020qb' w='74200' x='25000' y='7250'>
+                  <layout-cache minheight='180' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='25' name='2019qb' param='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:2019 FPTS:qk]' type-v2='filter' values='database' w='24200' x='800' y='19250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='236' h='30583' id='21' is-fixed='true' name='2019qb' w='74200' x='25000' y='37833'>
+                  <layout-cache minheight='180' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='24' name='avgpps' param='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[sum:Calculation_399975999278190597:qk]' type-v2='filter' values='database' w='24200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='237' h='30583' id='22' is-fixed='true' name='avgpps' w='74200' x='25000' y='68416'>
+                  <layout-cache minheight='180' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{08CF7C98-3376-4502-9BB2-E96D1B700B7F}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='2020qb'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:Calculation_399975999272595456:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[Parameters].[Parameter 1]</field>
+            <field>[Parameters].[Parameter 2]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 ATTEMPTED PASS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 CAR:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 COMPLETED PASS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 INT:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 PASSING TD:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 PASSING YDS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 RUSH TD:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 RUSH YDS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:Calculation_399975999272595456:nk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER NAME:nk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER POSITION (rb_stats_and_projections.csv):nk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER POSITION (te_stats_and_projections.csv1):nk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER POSITION:nk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:POSITION (wr_stats_and_projections.csv1):nk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:TEAM NAME:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E25D3F85-9289-4901-A8A5-2AE6E9DB881C}' />
+    </window>
+    <window class='worksheet' name='2019qb'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:Calculation_399975999272595456:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[Parameters].[Parameter 1]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 ATTEMPTED PASS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 CAR:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 COMPLETED PASS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 INT:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 PASSING TD:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 PASSING YDS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 RUSH TD:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 RUSH YDS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 ATTEMPTED PASS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 COMPLETED PASS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 INT:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:Calculation_399975999272595456:nk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER NAME:nk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER POSITION:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{02879FA4-DC03-4F9D-94B9-6466315B7447}' />
+    </window>
+    <window class='worksheet' name='avgpps'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:Calculation_399975999272595456:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[Parameters].[Parameter 1]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 ATTEMPTED PASS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 CAR:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 COMPLETED PASS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 INT:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 PASSING TD:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 PASSING YDS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 RUSH TD:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2019 RUSH YDS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 ATTEMPTED PASS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 COMPLETED PASS:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:2020 INT:qk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:Calculation_399975999272595456:nk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER NAME:nk]</field>
+            <field>[federated.0vz16961ac7dfx1g8o3z1190gsmc].[none:PLAYER POSITION:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0BC8C6CF-18DF-47C5-9E79-ABB3BB2379CB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='2019qb'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='2020qb'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='avgpps'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{1E57B6B2-6556-42F8-A5E3-83A673193DE0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='2019qb' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='2020qb' width='192'>
+      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
+      URTlL3nFlMv6N2gAAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='avgpps' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

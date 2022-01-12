@@ -1,0 +1,5 @@
+player interception 17
+passing yards per td 120
+player fumbles 5
+passing completion per attempt  
+

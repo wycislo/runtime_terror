@@ -1,0 +1,6 @@
+How many Receptions does this player have for this season? 123
+What is the Player Receiving Yards for this season? 2000 
+What is the Player Receiving Yards per Reception this season? 16.26
+What is the Player Receiving Yards per TD this season? 121
+How many times did this Player Fumble this season? 2
+result 273
